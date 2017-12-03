@@ -8,15 +8,18 @@ def findAnEven(l):
     Returns the first even number in l
     Raises ValueError if l does not contain an even number"""
 '''
-def is_palindrome(s):
-    s = s.lower()
-    rev_str = reversed(s)
-    if list(s) == list(rev_str):
-        print("It is palindrome")
-    else:
-        print("It is not palindrome")
+def is_even(s):
+    for i in s:
+        n=int(i)
+        if(n%2==0):
+            print n," is the first even number"
+            break
+        else:
+            continue
+    
+    
 
-my_str = raw_input("Enter the string")
-is_palindrome(my_str)
+n =raw_input("Enter the numbers").split(' ')
+is_even(n)
 
 
